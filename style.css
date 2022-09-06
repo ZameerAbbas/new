@@ -1,0 +1,277 @@
+body {
+    color: white;
+    background-color: #040404;
+    font-size: 17px;
+    font-family: Verdana, sans-serif;
+
+
+}
+
+#mainNav {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* font---icon */
+.fa .fa-chevron-right {
+    color: orange;
+}
+
+/* NavBar */
+.navbar ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #FFC300;
+    display: block;
+    margin: auto;
+    transition: .5s all ease-in-out;
+}
+
+.navbar ul li:hover {
+    color: #FFC300;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+/* home Section */
+#home {
+    background-image: url('assets/img/front.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+#home .container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+    right: 50%;
+
+    transform: skew(0deg) translateX(-50%);
+    background-image: linear-gradient(120deg, #363635, #272724);
+    opacity: 0.2;
+
+}
+
+#home .web {
+    /* background-color: rgba(238, 192, 106, 0.5); */
+    padding: 14px 20px;
+    /* background-color: rgba(241, 175, 52, 0.335); */
+    text-shadow: 0 2px 9px rgb(23 25 37 / 40%);
+    font-size: 29px;
+    border-radius: 40px;
+
+}
+
+#home .web:hover {
+
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+
+.eduicon {
+    display: inline-block;
+    width: 50px;
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.eduicon .fa {
+    font-size: 40px;
+    color: #040404;
+}
+
+.aboutimg img {
+    width: 100%;
+    height: 45vh;
+    border-radius: 3%;
+
+
+}
+
+#about .aboutimg::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -26px;
+    width: 90%;
+    height: 97%;
+    border: 7px solid #e69b23;
+    z-index: 1;
+    /* opacity: 0.7; */
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom: none;
+    border-left: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* about */
+#about .hover,
+.haver {
+    transition: 0.5s all ease-in-out;
+}
+
+#about .hover:hover {
+    font-size: 50px;
+}
+
+#about .hover::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #FFC300;
+    display: block;
+    margin: auto;
+    transition: .5s all ease-in-out;
+}
+
+#about .hover:hover::after {
+    width: 100%;
+
+}
+
+#about .haver:hover {
+    font-size: 20px;
+}
+
+/* education */
+#education {
+    background-color: #292F36;
+
+}
+
+/* #education .list-group-item {
+   border-radius: 5%;
+    background-color: #404040;
+}  */
+
+.edu-box {
+    background-color: #404040;
+}
+
+.border1 {
+
+    border-right: 3px solid orange;
+    border-bottom: 3px solid orange;
+    border-start-end-radius: 15%;
+    border-bottom-left-radius: 15%;
+    box-shadow: rgba(253, 198, 17, 0.5);
+
+}
+
+/* skill */
+
+#skill .hover {
+    transition: 0.7s all ease-in-out;
+}
+
+#skill .hover:hover {
+    font-size: 35px;
+}
+
+#skill .hover img {
+    background-color: #FFC300;
+    border-radius: 50%;
+}
+
+#skill .hover img:hover {
+    width: 5%;
+}
+
+/* contact section */
+#contact {
+    background-color: #212529;
+}
+
+#contact input {
+    font-size: 18px;
+
+}
+
+
+#contact span {
+    font-size: 19px;
+
+}
+
+#contact .col-lg-5 {
+    font-size: 20px;
+    line-height: 5vh;
+
+}
+
+#contact .col-lg-5 li {
+    transition: .7s all ease-in-out;
+
+}
+
+#contact .col-lg-5 li:hover {
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#contact .col-lg-5 i {
+    transition: .7s all ease-in-out;
+}
+
+#contact .col-lg-5 i:hover {
+    border-radius: 50%;
+    text-align: center;
+    font-size: 34px;
+
+}
+
+@media screen and (max-width:920px) {
+    /* #about .aboutimg img{
+      height: 70%;
+      margin-top: 45%;
+      width: 100%;
+  } */
+
+}
+
+@media screen and (max-width:720px) {
+
+    #skill .col-sm-6 {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .navbar {
+        width: 80%;
+
+    }
+    #about .aboutimg::before {
+        /* content: "";
+        position: absolute;
+        top: -20px;
+        right: -26px;
+        width: 90%;
+        height: 97%;
+        border: 7px solid #e69b23;
+        z-index: 1; */
+        /* opacity: 0.7; */
+        /* border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom: none;
+        border-left: none; */
+        border: none;
+    }
+    .screen320{
+        font-size: 16px;
+    }
+}
